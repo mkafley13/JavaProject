@@ -4,18 +4,27 @@ public class Lift {
 
     //States
 
-    //Lift Number
-    //Lift Color
+    //Lift Number (Int)
+    //Lift Color (String)
     //Dimension
-    //Capacity
-    //Number of floors
-    //Build Type
-    //Number of exits
-    //Manufacture
-    //Type of arts
-    //Number of mirrors
-    //Has Screen
-    //Has emergency button
+    //Capacity (Float)
+    //Number of floors (Int)
+    //Build Type (String)
+    //Number of exits (Int)
+    //Manufacture (String)
+    //Type of arts (String)
+    //Number of mirrors (Int)
+    //Has Screen (Boolean)
+    //Has emergency button (Boolean)
 
     //Behaviour
+
+    //Goes up
+    //Goes down
+    //Door open
+    //Door close
+    //Select Floor
+    //Lift on/off
+    //Call Emergency
+
 }
