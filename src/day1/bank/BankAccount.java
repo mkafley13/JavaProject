@@ -2,32 +2,32 @@ package day1.bank;
 
 public class BankAccount {
 
-        //States
+    //States
 
-        //SSN (String)
-   private String ssn;
-        //Account Number (String)
-   private String accountNumber;
-        //Account Type (String)
-   private String accountType;
-        //Customer Information (CustomerInformation)
-   private CustomerInformation customerInformation;
-        //Account Balance (double)
-   private double accountBalance;
-        //Branches (Int / String)
-   private String branch;
-        //Interest Rate (float)
-   private float interestRate;
+    //SSN (String)
+    private String ssn;
+    //Account Number (String)
+    private String accountNumber;
+    //Account Type (String)
+    private String accountType;
+    //Customer Information (CustomerInformation)
+    private CustomerInformation customerInformation;
+    //Account Balance (double)
+    private double accountBalance;
+    //Branches (Int / String)
+    private String branch;
+    //Interest Rate (float)
+    private float interestRate;
     //Account Holder Name
-   private String accountHolderName;
+    private String accountHolderName;
 
-   //Getters and Setters
+    //Getters and Setters
 
     public String getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(String accountNumber){
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 

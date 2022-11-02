@@ -6,12 +6,12 @@ public class FunctionPractice {
         float rate = 11.03f; //Yearly
         int time = 3; //Months
 
-       double interest = calculateInterest(principal, rate, time);
-       System.out.println(interest);
+        double interest = calculateInterest(principal, rate, time);
+        System.out.println(interest);
 
         principal = 600000;
-         rate = 11.04f; //Yearly
-         time = 6; //Months
+        rate = 11.04f; //Yearly
+        time = 6; //Months
 
         interest = calculateInterest(principal, rate, time);
         System.out.println(interest);
