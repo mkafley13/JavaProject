@@ -35,7 +35,29 @@ public class BankingApplication {
         // manojAccount.customerInformation = manojInformation;
         manojAccount.setCustomerInformation(manojInformation);
 
-        // BankAccount personBAccount = new BankAccount();
-        // personBAccount.accountNumber = "1234";
+         BankAccount personBAccount = new BankAccount();
+        personBAccount.setAccountNumber("1234");
+        personBAccount.setAccountBalance(200);
+
+        double amountToTransfer = 200;
+        // Manoj -> B
+
+       // manojAccount.setAccountBalance(manojAccount.getAccountBalance() - amountToTransfer);
+       // personBAccount.setAccountBalance(personBAccount.getAccountBalance() + amountToTransfer);
+
+        BankAccount dummyAccount = new BankAccount();
+        dummyAccount.transferBalance(manojAccount, personBAccount, amountToTransfer);
+
+        System.out.println("Manoj Balance : " + manojAccount.getAccountBalance());
+        System.out.println("Person B Balance : " + personBAccount.getAccountBalance());
+
+        // B -> Manoj
+       // manojAccount.setAccountBalance(manojAccount.getAccountBalance() + amountToTransfer);
+       // personBAccount.setAccountBalance(personBAccount.getAccountBalance() - amountToTransfer);
+
+        dummyAccount.transferBalance(personBAccount, manojAccount, amountToTransfer);
+
+        System.out.println("Manoj Balance : " + manojAccount.getAccountBalance());
+        System.out.println("Person B Balance : " + personBAccount.getAccountBalance());
     }
 }

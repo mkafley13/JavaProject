@@ -47,6 +47,10 @@ public class BankAccount {
         this.accountBalance = accountBalance;
     }
 
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
     public void setBranch(String branch) {
         this.branch = branch;
     }
@@ -60,6 +64,15 @@ public class BankAccount {
     }
 
     //Behaviour
+
+    public void transferBalance(BankAccount fromAccount, BankAccount toAccount, double amountToTransfer) {
+      //  fromAccount.setAccountBalance(fromAccount.getAccountBalance() - amountToTransfer);
+      //  toAccount.setAccountBalance(toAccount.getAccountBalance() + amountToTransfer);
+
+        fromAccount.accountBalance = fromAccount.accountBalance - amountToTransfer;
+        toAccount.accountBalance = toAccount.accountBalance + amountToTransfer;
+    }
+
 
     //Deposit
     //Withdraw
