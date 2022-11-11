@@ -16,7 +16,7 @@ public class BankingApplication {
         manojAccount.setAccountBalance(5000);
 
         // manojAccount.accountType = "SAVING";
-        manojAccount.setAccountType("SAVING");
+        manojAccount.setAccountType(AccountType.SAVING);
 
         // manojAccount.branch = "Bank Of America";
         manojAccount.setBranch("Bank Of America");

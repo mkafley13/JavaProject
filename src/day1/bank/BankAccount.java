@@ -9,7 +9,7 @@ public class BankAccount {
     //Account Number (String)
     private String accountNumber;
     //Account Type (String)
-    private String accountType;
+    private AccountType accountType;
     //Customer Information (CustomerInformation)
     private CustomerInformation customerInformation;
     //Account Balance (double)
@@ -35,7 +35,7 @@ public class BankAccount {
         this.ssn = ssn;
     }
 
-    public void setAccountType(String accountType) {
+    public void setAccountType(AccountType accountType) {
         this.accountType = accountType;
     }
 
