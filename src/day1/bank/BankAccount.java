@@ -21,6 +21,16 @@ public class BankAccount {
     //Account Holder Name
     private String accountHolderName;
 
+    public BankAccount(){
+
+    }
+    public BankAccount(String accountNumber, String accountHolderName, double accountBalance){
+        this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.accountBalance = accountBalance;
+
+    }
+
     //Getters and Setters
 
     public String getAccountNumber() {
@@ -45,6 +55,10 @@ public class BankAccount {
 
     public void setAccountBalance(double accountBalance) {
         this.accountBalance = accountBalance;
+    } {
+        if (accountBalance < 0){
+            throw new RuntimeException("Account balance can not be negative");
+        }
     }
 
     public double getAccountBalance() {

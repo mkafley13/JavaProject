@@ -2,6 +2,8 @@ package day1.bank;
 
 public class BankingApplication {
     public static void main(String[] args) {
+        BankAccount tesAccount = new BankAccount("7789","Test Account", 100);
+
         BankAccount manojAccount = new BankAccount();
         // manojAccount.accountNumber = "7638";
         manojAccount.setAccountNumber("7638");
