@@ -39,19 +39,24 @@ public class Grades {
         System.out.println(message);
 
         if (total >= 90) {
-            System.out.println("You received grade of A");
+            //System.out.println("You received grade of A");
+            System.out.println(String.format("%s you received total grade of A", name));
         }
         else if (total >=80 && total <=90){
-            System.out.println("You received grade of B");
+            //System.out.println("You received grade of B");
+            System.out.println(String.format("%s you received total grade of B", name));
         }
         else if (total >=70 && total <=80){
-            System.out.println("You received grade of C");
+            //System.out.println("You received grade of C");
+            System.out.println(String.format("%s you received total grade of C", name));
         }
         else if (total >=60 && total <=70){
-            System.out.println("You received grade of D");
+            //System.out.println("You received grade of D");
+            System.out.println(String.format("%s you received total grade of D", name));
         }
         else {
-            System.out.println("You received grade of F");
+            //System.out.println("You received grade of F");
+            System.out.println(String.format("%s you received total grade of F", name));
         }
 
     }
