@@ -79,12 +79,23 @@ public class BankAccount {
 
     //Behaviour
 
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", accountBalance=" + accountBalance +
+                ", accountHolderName='" + accountHolderName + '\'' +
+                '}';
+    }
+
     public void transferBalance(BankAccount fromAccount, BankAccount toAccount, double amountToTransfer) {
       //  fromAccount.setAccountBalance(fromAccount.getAccountBalance() - amountToTransfer);
       //  toAccount.setAccountBalance(toAccount.getAccountBalance() + amountToTransfer);
 
         fromAccount.accountBalance = fromAccount.accountBalance - amountToTransfer;
         toAccount.accountBalance = toAccount.accountBalance + amountToTransfer;
+
+
     }
 
 
