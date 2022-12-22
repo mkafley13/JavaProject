@@ -1,0 +1,22 @@
+Git Setup in any project:
+1. git init
+2. git remote add origin <URL>
+3. git add <file-name> or git add .
+4. git commit -am "<Message>"
+5. git push origin <branch-name>
+
+From 2nd Time (Whenever you are working alone):
+1. git add <file-name> or git add .
+2. git commit -am "<Message>"
+3. git push origin <branch-name>
+
+If multiple people are working on same git repo :
+1. git add <file-name> or git add .
+2. git commit -am "<Message>"    => working tree clean
+3. git pull origin <branch-name>
+if conflict then :
+    1. Solve the conflict
+    2. git status
+    if git status doesn't show working tree clean
+        1. git commit -am "<Message>"
+4. git push origin <branch-name>

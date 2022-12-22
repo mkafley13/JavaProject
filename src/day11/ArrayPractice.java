@@ -2,7 +2,6 @@ package day11;
 
 import day1.bank.BankAccount;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class ArrayPractice {
@@ -23,8 +22,8 @@ public class ArrayPractice {
 
         BankAccount[] accounts = new BankAccount[3];
 
-        accounts[0] = new BankAccount("2246", "ACD",600);
-        accounts[1] = new BankAccount("4366", "AAC",800);
+        accounts[0] = new BankAccount("2246", "ACD", 600);
+        accounts[1] = new BankAccount("4366", "AAC", 800);
 
         System.out.println(Arrays.toString(accounts));
 
@@ -34,6 +33,36 @@ public class ArrayPractice {
 
         System.out.println("Last index : " + (accounts.length - 1));
 
+        for (int i = 0; i < a.length; i++) { //Shows the value shown on int an array
+            System.out.println(a[i]);
+            a[i] = (int) Math.pow(a[i], 2); //Squares the array one by one
+        }
+        System.out.println(Arrays.toString(a));
 
+        int i = 0;
+        for (int value : a) { //enhance for loops
+            System.out.println(value);
+            a[i] = (int) Math.sqrt(value);
+            i++;
+        }
+        System.out.println(Arrays.toString(a));
+
+        a = add(a,6);
+        System.out.println(Arrays.toString(a));
+
+    }
+
+    public static int[] add(int[] ar, int value) {
+        int[] newArray = new int[ar.length + 1];
+        int oldArrayLength = ar.length - 1;
+
+        for (int i = 0; i < newArray.length; i++) {
+            if (i != newArray.length - 1) {
+                newArray[i] = ar[i];
+            } else {
+                newArray[i] = value;
+            }
+        }
+        return newArray;
     }
 }
